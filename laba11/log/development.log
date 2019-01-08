@@ -1,0 +1,1385 @@
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:13:27 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (19.2ms)
+Completed 200 OK in 47ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:13:39 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (8.0ms)
+Completed 200 OK in 34ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 13:13:47 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"output", :controller=>"rk"}):
+    1: <%= form_tag url_for(controller: 'rk', action: 'output'), method: 'get' do %>
+    2: 
+    3:    <%= label_tag :word, 'Введите n. n - кол-во цифр из которых будет состоять число.' %>
+    4:    <%= text_field_tag :word%>
+  
+app/views/laba8/task.html.erb:1:in `_app_views_laba__task_html_erb__2162855744759639262_70154309668160'
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 13:14:17 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1069ms (Views: 1062.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 13:14:30 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"1", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pow' for Math:Module):
+  
+app/controllers/laba8_controller.rb:8:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 13:16:23 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"1", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:30:27 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 62ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:31:55 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 13:32:02 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 13:32:06 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"1", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/laba8_controller.rb:15:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 13:55:07 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"1", "commit"=>"Поехали!"}
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 13:55:25 +0300
+Completed   in 3041858ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 14:48:20 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 444ms (Views: 428.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=1&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 14:48:26 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"1", "commit"=>"Поехали!"}
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 14:48:52 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9199ms (Views: 8896.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-16 14:49:05 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11409ms (Views: 10903.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-16 14:49:27 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+Completed   in 554058ms (ActiveRecord: 0.0ms)
+
+
+Completed   in 491872ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-17 14:07:30 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 802ms (Views: 783.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:07:38 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/laba8_controller.rb:7:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:08:12 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/laba8_controller.rb:7:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:09:01 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/laba8_controller.rb:7:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:09:23 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `param' for #<Laba8Controller:0x00007fc28c528770>
+Did you mean?  params
+               params=):
+  
+app/controllers/laba8_controller.rb:7:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:09:58 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 129ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:10:05 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 560ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:12:32 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 447ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:12:35 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 432ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:12:39 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 455ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:12:53 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 627ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:12:56 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 458ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:13:13 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 415ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:13:17 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 452ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:14:19 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 561ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:15:32 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 524ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:15:52 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 573ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:16:01 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 488ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:17:28 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 588ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/nikita/Documents/labi/laba8/app/views/laba8/answer.html.erb:3: syntax error, unexpected keyword_do_block
+'.freeze;  arr_b.each |a| do 
+                          ^~):
+  
+app/views/laba8/answer.html.erb:3: syntax error, unexpected keyword_do_block
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:17:48 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 601ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/nikita/Documents/labi/laba8/app/views/laba8/answer.html.erb:11: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/laba8/answer.html.erb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:18:13 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (719.3ms)
+Completed 500 Internal Server Error in 1389ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `arr_b' for #<#<Class:0x00007fc28d366e40>:0x00007fc2892a6748>):
+    1: <h3>Массив чисел Армстронга:</h3> 
+    2: <h3>
+    3:  <% arr_b.each do |a| %>
+    4:  <%= @l=a %> 
+    5:  <% end %>
+    6:  </h3>
+  
+app/views/laba8/answer.html.erb:3:in `_app_views_laba__answer_html_erb___1113421571079396787_70236750898320'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-17 14:20:59 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (926.6ms)
+Completed 500 Internal Server Error in 1622ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `arr' for #<#<Class:0x00007fc28d366e40>:0x00007fc28d119548>
+Did you mean?  Array):
+    1: <h3>Массив чисел Армстронга:</h3> 
+    2: <h3>
+    3: <% arr.each do |v| %>
+    4: <div><%= v %></div>
+    5: <% end %> 
+    6:  </h3>
+  
+app/views/laba8/answer.html.erb:3:in `_app_views_laba__answer_html_erb___1113421571079396787_70236783564400'
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-20 14:17:22 +0300
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-20 14:17:22 +0300
+Processing by Laba8Controller#task as HTML
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (4.6ms)
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 707ms (Views: 686.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 693ms (Views: 680.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=4&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:17:27 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"4", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (357.7ms)
+Completed 500 Internal Server Error in 5313ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `arr' for #<#<Class:0x00007fba04162338>:0x00007fba073a26e0>
+Did you mean?  Array):
+    1: <h3>Массив чисел Армстронга:</h3> 
+    2: <h3>
+    3: <% arr.each do |v| %>
+    4: <div><%= v %></div>
+    5: <% end %> 
+    6:  </h3>
+  
+app/views/laba8/answer.html.erb:3:in `_app_views_laba__answer_html_erb__1004185388484136242_70218480949880'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=4&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:18:49 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"4", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4637ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-20 14:22:27 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.4ms)
+Completed 200 OK in 26ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-11-20 14:22:51 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 68ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:23:03 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 708ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:24:04 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 608ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:27:15 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 596ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:27:31 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 380ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:29:48 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 572ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:30:47 +0300
+  
+SyntaxError (/Users/nikita/Documents/labi/laba8/app/controllers/laba8_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/laba8_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:30:49 +0300
+  
+SyntaxError (/Users/nikita/Documents/labi/laba8/app/controllers/laba8_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/laba8_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:31:03 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 707ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:33:50 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 637ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:34:02 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 406ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:34:35 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+Completed 500 Internal Server Error in 541ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Integer into String):
+  
+app/controllers/laba8_controller.rb:39:in `delete'
+app/controllers/laba8_controller.rb:39:in `answer'
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:35:22 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 587ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:35:25 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 464ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-11-20 14:35:51 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 543ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-11 23:12:31.288222"], ["updated_at", "2018-12-11 23:12:31.288222"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:15:13 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 56ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:15:18 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-12-12 02:15:25 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 485ms (Views: 480.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-12 02:15:29 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 528ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=2&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-12 02:15:35 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"2", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-12 02:15:46 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 213ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-12 02:16:05 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 413ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-21 10:41:42 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (8.1ms)
+Completed 200 OK in 58ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/task" for 127.0.0.1 at 2018-12-21 10:41:49 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 499ms (Views: 490.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=4&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-21 10:41:57 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"4", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4286ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-21 10:43:29 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 24ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-26 15:29:59 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nikita/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (7.7ms)
+Completed 200 OK in 76ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-26 15:30:31 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1185ms (Views: 1172.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-26 15:31:12 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 955ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/twetlers" for 127.0.0.1 at 2018-12-26 15:34:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/twetlers"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-26 15:34:42 +0300
+  
+ActionController::RoutingError (uninitialized constant TaslController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-26 15:35:04 +0300
+  
+ActionController::RoutingError (uninitialized constant TaskController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-26 15:35:23 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-26 16:05:34 +0300
+Processing by Laba8Controller#task as HTML
+  Rendering laba8/task.html.erb within layouts/application
+  Rendered laba8/task.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 617ms (Views: 605.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/laba8/answer?utf8=%E2%9C%93&word=3&commit=%D0%9F%D0%BE%D0%B5%D1%85%D0%B0%D0%BB%D0%B8%21" for 127.0.0.1 at 2018-12-26 16:05:41 +0300
+Processing by Laba8Controller#answer as HTML
+  Parameters: {"utf8"=>"✓", "word"=>"3", "commit"=>"Поехали!"}
+  Rendering laba8/answer.html.erb within layouts/application
+  Rendered laba8/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1171ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-12-27 03:37:07 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/get_bootstrap.scss:1
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___384568513303091903_70154244265740'
+Started GET "/" for ::1 at 2018-12-27 03:37:10 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/get_bootstrap.scss:1
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___384568513303091903_70154263619180'
+Started GET "/" for ::1 at 2018-12-27 03:39:42 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__175621487445046515_70119384527020'
+Started GET "/" for ::1 at 2018-12-27 03:51:05 +0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 394ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    32: });
+    33: </script>
+    34: 
+    35:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    36:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    37:   </head>
+    38: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:35:in `_app_views_layouts_application_html_erb___4015456006340262958_70099886289700'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:19:58 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    32: });
+    33: </script>
+    34: 
+    35:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    36:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    37:   </head>
+    38: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:35:in `_app_views_layouts_application_html_erb__383897217988039202_70315994190220'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:20:01 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    32: });
+    33: </script>
+    34: 
+    35:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    36:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    37:   </head>
+    38: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:35:in `_app_views_layouts_application_html_erb__383897217988039202_70315997918100'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:22:45 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316025266200'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:22:48 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316028230840'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:24:01 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316022909100'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:24:04 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316043311840'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:24:08 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316025890700'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:24:46 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316025152840'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:30:13 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+    4:     <title>LR11</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__383897217988039202_70316022509100'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:37:42 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/nikita/Documents/labi/laba8/app/assets/config
+  /Users/nikita/Documents/labi/laba8/app/assets/images
+  /Users/nikita/Documents/labi/laba8/app/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/app/assets/stylesheets
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nikita/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nikita/Documents/labi/laba8/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body style="padding-top: 10px">
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__383897217988039202_70316043129240'
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:37:53 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/output?utf8=%E2%9C%93&count=2&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2018-12-27 04:37:58 +0300
+Processing by PalsController#output as HTML
+  Parameters: {"utf8"=>"✓", "count"=>"2", "commit"=>"Отправить"}
+  [1m[36mPal Load (0.7ms)[0m  [1m[34mSELECT  "pals".* FROM "pals" WHERE "pals"."count" = ? ORDER BY "pals"."id" ASC LIMIT ?[0m  [["count", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  Rendering pals/output.html.erb within layouts/application
+  Rendered pals/output.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 136ms (Views: 17.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pals/output?utf8=%E2%9C%93&count=3&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2018-12-27 04:38:03 +0300
+Processing by PalsController#output as HTML
+  Parameters: {"utf8"=>"✓", "count"=>"3", "commit"=>"Отправить"}
+  [1m[36mPal Load (0.3ms)[0m  [1m[34mSELECT  "pals".* FROM "pals" WHERE "pals"."count" = ? ORDER BY "pals"."id" ASC LIMIT ?[0m  [["count", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Create (1.0ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", 3], ["res", "[153,370,371,407]"], ["created_at", "2018-12-27 01:38:03.670484"], ["updated_at", "2018-12-27 01:38:03.670484"]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  Rendering pals/output.html.erb within layouts/application
+  Rendered pals/output.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 446ms (Views: 11.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:39:14 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/all" for 127.0.0.1 at 2018-12-27 04:39:25 +0300
+Processing by PalsController#all as HTML
+  [1m[36mPal Load (0.7ms)[0m  [1m[34mSELECT "pals".* FROM "pals"[0m
+  ↳ app/controllers/pals_controller.rb:8
+Completed 200 OK in 157ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 04:40:53 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/all" for 127.0.0.1 at 2018-12-27 04:40:54 +0300
+Processing by PalsController#all as HTML
+  [1m[36mPal Load (0.6ms)[0m  [1m[34mSELECT "pals".* FROM "pals"[0m
+  ↳ app/controllers/pals_controller.rb:8
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 09:51:48 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 76ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/output?utf8=%E2%9C%93&count=5&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2018-12-27 09:51:55 +0300
+Processing by PalsController#output as HTML
+  Parameters: {"utf8"=>"✓", "count"=>"5", "commit"=>"Отправить"}
+  [1m[36mPal Load (0.4ms)[0m  [1m[34mSELECT  "pals".* FROM "pals" WHERE "pals"."count" = ? ORDER BY "pals"."id" ASC LIMIT ?[0m  [["count", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Create (6.0ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", 5], ["res", "[54748,92727,93084]"], ["created_at", "2018-12-27 06:51:56.013804"], ["updated_at", "2018-12-27 06:51:56.013804"]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  Rendering pals/output.html.erb within layouts/application
+  Rendered pals/output.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53824ms (Views: 16.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 09:52:56 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/all" for 127.0.0.1 at 2018-12-27 09:52:58 +0300
+Processing by PalsController#all as HTML
+  [1m[36mPal Load (0.9ms)[0m  [1m[34mSELECT "pals".* FROM "pals"[0m
+  ↳ app/controllers/pals_controller.rb:8
+Completed 200 OK in 100ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 10:58:38 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nikita/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/all" for 127.0.0.1 at 2018-12-27 10:58:51 +0300
+Processing by PalsController#all as HTML
+  [1m[36mPal Load (0.3ms)[0m  [1m[34mSELECT "pals".* FROM "pals"[0m
+  ↳ app/controllers/pals_controller.rb:8
+Completed 200 OK in 64ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pals/output?utf8=%E2%9C%93&count=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2018-12-27 10:58:58 +0300
+Processing by PalsController#output as HTML
+  Parameters: {"utf8"=>"✓", "count"=>"4", "commit"=>"Отправить"}
+  [1m[36mPal Load (0.3ms)[0m  [1m[34mSELECT  "pals".* FROM "pals" WHERE "pals"."count" = ? ORDER BY "pals"."id" ASC LIMIT ?[0m  [["count", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[36mPal Create (2.5ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", 4], ["res", "[1634,8208,9474]"], ["created_at", "2018-12-27 07:58:58.485742"], ["updated_at", "2018-12-27 07:58:58.485742"]]
+  ↳ app/controllers/pals_controller.rb:12
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pals_controller.rb:12
+  Rendering pals/output.html.erb within layouts/application
+  Rendered pals/output.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2099ms (Views: 11.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 10:59:02 +0300
+Processing by PalsController#input as HTML
+  Rendering pals/input.html.erb within layouts/application
+  Rendered pals/input.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pals/output?utf8=%E2%9C%93&count=4&commit=%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C" for 127.0.0.1 at 2018-12-27 10:59:07 +0300
+Processing by PalsController#output as HTML
+  Parameters: {"utf8"=>"✓", "count"=>"4", "commit"=>"Отправить"}
+  [1m[36mPal Load (0.4ms)[0m  [1m[34mSELECT  "pals".* FROM "pals" WHERE "pals"."count" = ? ORDER BY "pals"."id" ASC LIMIT ?[0m  [["count", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pals_controller.rb:12
+  Rendering pals/output.html.erb within layouts/application
+  Rendered pals/output.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+

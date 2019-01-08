@@ -1,0 +1,7 @@
+<h2>Лабораторная 11</h2>
+<%= form_tag("pals/output", method: :get) do %>
+	<%= label_tag(:count, 'Вывести числа армстронга для n-значного числ:') %>
+	<%= number_field_tag(:count, '10') %>
+	<%= submit_tag("Отправить") %>
+	<a href="/pals/all">GO</a>
+<% end %>

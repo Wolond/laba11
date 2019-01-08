@@ -1,0 +1,14 @@
+<table class="container col-md-3 table">
+	<tr>
+		<th>Результат</th>
+	</tr>
+	<% arr = JSON.parse(@pal.res)
+		 arr.size.times do |i| %>
+	<tr>
+		<td><%= arr[i] %></td>
+	</tr>
+	<% end %>
+</table>
+<p class="container">
+  <%= link_to "Вернуться назад",:back %>
+</p>
